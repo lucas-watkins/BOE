@@ -1,17 +1,22 @@
 from flask import Flask
 import serial
 
-app = Flask('BOE Server')
+try:
+    app = Flask('BOE Server')
+    ser = serial.Serial(port = 'COM8', baudrate= 115200)  # open serial port
 
-@app.route('/<command>')
-def w(command):
-    ser = serial.Serial(port = 'USB-SERIAL CH340', baudrate= 9600)  # open serial port
-    print(ser.name)         # check which port was really used
-    ser.write(bytes(command))     # write a string
-    ser.close() 
-    return 'Command Completed'
+    @app.route('/<command>')
+    def slash(command):
+        if command != 'favicon.ico': # passes favicon.ico for some reason as an argument
+            print(bytes(command, 'utf-8'))
+            ser.write(bytes(command, 'utf-8'))     # write a string 
+            return 'Command Completed'
+        return 'no favicon'
 
 
-if __name__ == '__main__':
-    app.run('0.0.0.0', port = 8080)
-    
+    if __name__ == '__main__':
+        app.run('0.0.0.0', port = 8080)
+
+except KeyboardInterrupt as e:
+    print('Exiting...')
+    ser.close()
