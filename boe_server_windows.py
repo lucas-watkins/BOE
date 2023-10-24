@@ -3,7 +3,7 @@ import serial
 
 try:
     app = Flask('BOE Server')
-    ser = serial.Serial(port = 'COM8', baudrate= 115200)  # open serial port
+    ser = serial.Serial(port = '/dev/bus/usb/001/004', baudrate= 115200)  # open serial port
 
     @app.route('/<command>')
     def slash(command):
