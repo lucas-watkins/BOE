@@ -1,7 +1,7 @@
 #include "Servo.h"
 //declare re-usable input variable
 char input;
-const int delay_period = 100;
+const int delay_period = 250;
 
 //declare servos
 Servo rightServo;
@@ -10,7 +10,7 @@ Servo midServo;
 
 void setup() {
   //initalize serial port and print welcome message
-  Serial.begin(9600); 
+  Serial.begin(115200); 
   delay(50); 
   Serial.println("BOE is Ready");
 }
