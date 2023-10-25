@@ -7,7 +7,6 @@ import kivy
 from usb4a import usb
 from usbserial4a import serial4a
 from pprint import pprint
-from flask import Flask
 
 usb_device_list = usb.get_usb_device_list()
 usb_device_name_list = [device.getDeviceName() for device in usb_device_list]
@@ -24,27 +23,20 @@ pprint(usb_device_dict)
 if usb_device_list:
     serial_port = serial4a.get_serial_port(
         usb_device_list[0].getDeviceName(), 
-        115200,   # Baudrate
+        9600,   # Baudrate
         8,      # Number of data bits(5, 6, 7 or 8)
         'N',    # Parity('N', 'E', 'O', 'M' or 'S')
         1)      # Number of stop bits(1, 1.5 or 2)
+    if serial_port and serial_port.is_open:
+        from time import sleep
+        from flask import Flask
 
-try:
-    app = Flask('BOE Server')
+        app = Flask('BOE Server')
 
-    @app.route('/<command>')
-    def slash(command):
-        if command != 'favicon.ico': # passes favicon.ico for some reason as an argument
-            print(bytes(command, 'utf-8'))
-            serial_port.write(bytes(command, 'utf-8'))     # write a string 
-            return 'Command Completed'
-        return 'no favicon'
-
-
-    if __name__ == '__main__':
-        app.run('0.0.0.0', port = 8080)
-
-except KeyboardInterrupt as e:
-    print('Exiting...')
-    serial_port.close()
-    
+        sleep(3)
+        @app.route('/<command>')
+        def slash(command):
+            serial_port.write(bytes)
+            return 'command completed'
+        
+        app.run('0.0.0.0', 8080)
