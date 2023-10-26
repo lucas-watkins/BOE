@@ -1,0 +1,21 @@
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\bin\Debug\net6.0-windows\BOE Connect.exe
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\bin\Debug\net6.0-windows\BOE Connect.deps.json
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\bin\Debug\net6.0-windows\BOE Connect.runtimeconfig.json
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\bin\Debug\net6.0-windows\BOE Connect.dll
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\bin\Debug\net6.0-windows\BOE Connect.pdb
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\BOE Connect.csproj.AssemblyReference.cache
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\App.g.cs
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\BOE Connect_MarkupCompile.cache
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\BOE Connect_MarkupCompile.lref
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\MainWindow.baml
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\BOE Connect.g.resources
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\BOE Connect.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\BOE Connect.AssemblyInfoInputs.cache
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\BOE Connect.AssemblyInfo.cs
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\BOE Connect.csproj.CoreCompileInputs.cache
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\BOE Connect.dll
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\refint\BOE Connect.dll
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\BOE Connect.pdb
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\BOE Connect.genruntimeconfig.cache
+C:\Users\Lucas Watkins\Documents\MyScripts\BOE Bot\BOE Connect\obj\Debug\net6.0-windows\ref\BOE Connect.dll
