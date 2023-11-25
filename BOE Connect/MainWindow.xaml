@@ -3,19 +3,22 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:BOE_Connect"
+        xmlns:local="clr-namespace:BOE_Connect" xmlns:wpf="clr-namespace:CefSharp.Wpf;assembly=CefSharp.Wpf"
         mc:Ignorable="d"
-        Title="BOE Connect" Height="600" Width="1000" MinWidth="1000" MinHeight="600">
+        Title="BOE Connect" Height="600" Width="1000" MinWidth="1000" MinHeight="600" KeyDown="OnKeyDownHandler">
     <Grid>
         <Grid Margin="110,100,110,49">
             <Border BorderBrush="Black" BorderThickness="2">
-                <WebBrowser x:Name="browser"></WebBrowser>
+                <wpf:ChromiumWebBrowser x:Name="browser"></wpf:ChromiumWebBrowser>
             </Border>
         </Grid>
-        <TextBox HorizontalAlignment="Left" Margin="110,50,0,0" TextWrapping="Wrap" Text="Sever IP" VerticalAlignment="Top" Width="120" x:Name="server_box"/>
-        <TextBox HorizontalAlignment="Left" Margin="280,50,0,0" TextWrapping="Wrap" Text="Camera Port" VerticalAlignment="Top" Width="120" x:Name="camera_port"/>
-        <TextBox HorizontalAlignment="Left" Margin="444,50,0,0" TextWrapping="Wrap" Text="Webserver Port" VerticalAlignment="Top" Width="120" x:Name="webserver_port"/>
-        <Button Content=" Connect " HorizontalAlignment="Left" Margin="636,49,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Margin="110,50,0,0" TextWrapping="Wrap" Text="172.16.2.223" VerticalAlignment="Top" Width="120" x:Name="server_box"/>
+        <TextBox HorizontalAlignment="Left" Margin="280,50,0,0" TextWrapping="Wrap" Text="4747" VerticalAlignment="Top" Width="120" x:Name="camera_port"/>
+        <TextBox HorizontalAlignment="Left" Margin="444,50,0,0" TextWrapping="Wrap" Text="8080" VerticalAlignment="Top" Width="120" x:Name="webserver_port"/>
+        <Button Content=" Connect " HorizontalAlignment="Left" Margin="636,49,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    <Label Content="Server IP:" HorizontalAlignment="Left" Margin="110,24,0,0" VerticalAlignment="Top"/>
+    <Label Content="Camera Port:" HorizontalAlignment="Left" Margin="280,24,0,0" VerticalAlignment="Top"/>
+        <Label Content="Webserver Port:" HorizontalAlignment="Left" Margin="444,24,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
